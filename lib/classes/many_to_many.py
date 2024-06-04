@@ -72,6 +72,7 @@ class Author:
             return None
         return list({article.magazine.category for article in self._articles})
 
+
 class Magazine:
     def __init__(self, name, category):
         if not isinstance(name, str) or not (2 <= len(name) <= 16):
